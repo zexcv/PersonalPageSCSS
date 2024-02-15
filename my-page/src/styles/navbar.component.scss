@@ -1,40 +1,89 @@
-@import '../styles/global.scss';
+@import "../styles/global.scss";
 
-
-.nav-wrapper{
-    background-color: $black-translusent;
-    width: 100dvw;
-    padding-block: 0.5%;
-    position: sticky;
-    top: 0;
-    z-index: 30;
-    backdrop-filter: blur(30px);
-    .initials{
-        font-family: "Whisper", sans-serif;
-        font-size: 3rem;
-        font-weight: bold;
-        color: $base-color;
-    }
-    .nav-content{
-        font-family: "Roboto", sans-serif;
-        max-width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 auto;
-        ul{
-            @include flex-center;
-            list-style: none;
-            gap: 15%;
-            li{
-                margin: 0 1rem;
-            }
-            .menu-item{
-                text-decoration: none;
-                font-size: 1rem;
-                color: white;
-            }
+.nav-wrapper {
+  background-color: $black-translusent;
+  width: 100vw;
+  padding-block: 0.5%;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(30px);
+  .initials {
+    font-family: "Whisper", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $base-color;
+  }
+  .nav-content {
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    ul {
+      @include flex-center;
+      list-style: none;
+      gap: 20%;
+      .menu-item {
+        text-decoration: none;
+        font-size: $nav-size;
+        color: white;
+        position: relative;
+        &::before {
+          content: " ";
+          width: 2rem;
+          height: 0.2rem;
+          background: linear-gradient($gradient);
+          border-radius: 0.5rem;
+          position: absolute;
+          bottom: -0.6rem;
+          opacity: 0;
+          transform: translateX(-1.5rem);
+          transition: all 0.2s ease;
         }
+        &:hover::before {
+          width: 100%;
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .resume-btn {
+        @include flex-center;
+        font-size: $nav-size;
+        color: #fff;
+        background: linear-gradient($gradient);
+        padding: 3% 8%;
+        border: none;
+        outline: 1.5px solid transparent;
+        border-radius: 0.2rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          color: #a993fe;
+          background: #000;
+          outline: 1.5px solid #a993fe;
+        }
+      }
     }
-    
+  }
+  .menu-btn {
+    @include flex-center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: linear-gradient($gradient);
+    cursor: pointer;
+    transition: all 0.4 ease;
+    display: none;
+    &:hover {
+      color: #a993fe;
+      background: #000;
+      border: 1px solid #a993fe;
+    }
+  }
 }

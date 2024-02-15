@@ -39,9 +39,9 @@ export default function Navbar() {
             </li>
             <button className="resume-btn">My Resume</button>
           </ul>
-          {/* <button className="menu-btn" onClick={toggleMenu}>
+          <button className="menu-btn" onClick={toggleMenu}>
             <FontAwesomeIcon icon={openMenu ? faX : faBars} />
-          </button> */}
+          </button>
         </div>
       </nav>
     </>

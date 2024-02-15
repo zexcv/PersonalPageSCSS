@@ -1,6 +1,6 @@
 .nav-wrapper {
   background-color: rba(0, 0, 0, 0.2);
-  width: 100dvw;
+  width: 100vw;
   padding-block: 0.5%;
   position: sticky;
   top: 0;
@@ -14,6 +14,7 @@
   color: #7e61e7;
 }
 .nav-wrapper .nav-content {
+  white-space: nowrap;
   font-family: "Roboto", sans-serif;
   max-width: 70%;
   display: flex;
@@ -26,13 +27,67 @@
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 15%;
-}
-.nav-wrapper .nav-content ul li {
-  margin: 0 1rem;
+  gap: 20%;
 }
 .nav-wrapper .nav-content ul .menu-item {
   text-decoration: none;
   font-size: 1rem;
   color: white;
+  position: relative;
+}
+.nav-wrapper .nav-content ul .menu-item::before {
+  content: " ";
+  width: 2rem;
+  height: 0.2rem;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: -0.6rem;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition: all 0.2s ease;
+}
+.nav-wrapper .nav-content ul .menu-item:hover::before {
+  width: 100%;
+  transform: translateX(0);
+  opacity: 1;
+}
+.nav-wrapper .nav-content ul .resume-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  padding: 3% 8%;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.nav-wrapper .nav-content ul .resume-btn:hover {
+  color: #a993fe;
+  background: #000;
+  outline: 1.5px solid #a993fe;
+}
+.nav-wrapper .menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  color: #fff;
+  background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+  cursor: pointer;
+  transition: all 0.4 ease;
+  display: none;
+}
+.nav-wrapper .menu-btn:hover {
+  color: #a993fe;
+  background: #000;
+  border: 1px solid #a993fe;
 }/*# sourceMappingURL=navbar.component.css.map */
