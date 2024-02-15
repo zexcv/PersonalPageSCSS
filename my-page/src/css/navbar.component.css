@@ -1,6 +1,6 @@
 .nav-wrapper {
   background-color: rba(0, 0, 0, 0.2);
-  width: 100vw;
+  width: 100%;
   padding-block: 0.5%;
   position: sticky;
   top: 0;
@@ -16,7 +16,7 @@
 .nav-wrapper .nav-content {
   white-space: nowrap;
   font-family: "Roboto", sans-serif;
-  max-width: 70%;
+  max-width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,4 +90,17 @@
   color: #a993fe;
   background: #000;
   border: 1px solid #a993fe;
+}
+@media (max-width: 1024px) {
+  .nav-wrapper .menu-btn {
+    display: block;
+  }
+  .nav-wrapper .nav-content ul {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .nav-wrapper .nav-content {
+    max-width: 80%;
+  }
 }/*# sourceMappingURL=navbar.component.css.map */
