@@ -1,0 +1,38 @@
+.nav-wrapper {
+  background-color: rba(0, 0, 0, 0.2);
+  width: 100dvw;
+  padding-block: 0.5%;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(30px);
+}
+.nav-wrapper .initials {
+  font-family: "Whisper", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #7e61e7;
+}
+.nav-wrapper .nav-content {
+  font-family: "Roboto", sans-serif;
+  max-width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.nav-wrapper .nav-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 15%;
+}
+.nav-wrapper .nav-content ul li {
+  margin: 0 1rem;
+}
+.nav-wrapper .nav-content ul .menu-item {
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+}/*# sourceMappingURL=navbar.component.css.map */

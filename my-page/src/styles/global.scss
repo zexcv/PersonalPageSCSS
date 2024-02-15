@@ -1,0 +1,14 @@
+$responsive_min-width: 360px;
+$responsive_mobile: 640px;
+$responsive_tablet: 1024px;
+//COLORS
+$gradient: 90deg, #a993fe 0%, #7e61e7 100%;
+$page-background: #060417;
+$base-color: #7e61e7;
+$black-translusent: rba(0,0,0,0.2);
+
+@mixin flex-center {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
