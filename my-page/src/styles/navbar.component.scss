@@ -8,12 +8,8 @@
   top: 0;
   z-index: 30;
   backdrop-filter: blur(30px);
-  .initials {
-    font-family: "Whisper", sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    color: $base-color;
-  }
+  @include initials;
+  
   .nav-content {
     white-space: nowrap;
     font-family: "Roboto", sans-serif;
@@ -50,16 +46,7 @@
         }
       }
       .resume-btn {
-        @include flex-center;
-        font-size: $nav-size;
-        color: #fff;
-        background: linear-gradient($gradient);
-        padding: 3% 8%;
-        border: none;
-        outline: 1.5px solid transparent;
-        border-radius: 0.2rem;
-        transition: all 0.3s ease;
-        cursor: pointer;
+        @include resume-btn;
         &:hover {
           color: #a993fe;
           background: #000;

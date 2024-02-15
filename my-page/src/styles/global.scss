@@ -5,12 +5,33 @@ $responsive_tablet: 1024px;
 $gradient: 90deg, #a993fe 0%, #7e61e7 100%;
 $page-background: #060417;
 $base-color: #7e61e7;
-$black-translusent: rba(0,0,0,0.2);
+$black-translusent: rba(0, 0, 0, 0.2);
 //FONTS
 $nav-size: 1rem;
 
 @mixin flex-center {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin initials {
+  .initials {
+    font-family: "Whisper", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $base-color;
+  }
+}
+@mixin resume-btn{
+    @include flex-center;
+    font-size: $nav-size;
+    color: #fff;
+    background: linear-gradient($gradient);
+    padding: 3% 8%;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }

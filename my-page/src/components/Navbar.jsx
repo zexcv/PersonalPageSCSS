@@ -12,7 +12,7 @@ export default function Navbar() {
   };
   return (
     <>
-      {/* <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/> */}
+      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
       <nav className="nav-wrapper">
         <div className="nav-content">
           <div className="initials">KK</div>

@@ -1,0 +1,65 @@
+@import "../styles/global.scss";
+
+.mobile-menu {
+  display: none;
+  background-color: $black-translusent;
+  position: fixed;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999 !important;
+  opacity: 0;
+  box-shadow: 0px 29px 80px $black-translusent;
+  transition: all 0.3s ease;
+  transform: translateX(-100vw);
+
+  &-container {
+    transition: all 0.3s ease;
+    width: 60%;
+    height: 100%;
+    background-color: #342864;
+    padding: 2rem;
+    @include initials;
+
+    ul {
+      .menu-item {
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        color: white;
+      }
+      .resume-btn {
+        @include resume-btn;
+        @media(max-width:$responsive_tablet){
+            max-width: 50%;
+        }
+        @media(max-width:$responsive_mobile){
+            max-width: 100%;
+        }
+      }
+    }
+  }
+
+  &.active {
+    transition: all 0.3 ease;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+  }
+
+  & .initials {
+    margin-bottom: 3rem;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  @media (max-width: $responsive_tablet) {
+    display: block;
+  }
+}
