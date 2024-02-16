@@ -1,6 +1,7 @@
 $responsive_min-width: 360px;
 $responsive_mobile: 640px;
 $responsive_tablet: 1024px;
+$responsive_laptop: 1440px;
 //COLORS
 $gradient: 90deg, #a993fe 0%, #7e61e7 100%;
 $page-background: #060417;
@@ -23,15 +24,25 @@ $nav-size: 1rem;
     color: $base-color;
   }
 }
-@mixin resume-btn{
-    @include flex-center;
-    font-size: $nav-size;
-    color: #fff;
-    background: linear-gradient($gradient);
-    padding: 3% 8%;
-    border: none;
-    outline: 1.5px solid transparent;
-    border-radius: 0.2rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
+@mixin resume-btn {
+  @include flex-center;
+  font-size: $nav-size;
+  color: #fff;
+  background: linear-gradient($gradient);
+  padding: 3% 8%;
+  border: none;
+  outline: 1.5px solid transparent;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+@mixin flare {
+  content: " ";
+  width: 28rem;
+  height: 28rem;
+  border-radius: 28rem;
+  background: #7e61e7;
+  position: absolute;
+  z-index: -1;
+  filter: blur(170px);
 }

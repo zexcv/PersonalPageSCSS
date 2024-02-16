@@ -1,0 +1,72 @@
+@import "../styles/global.scss";
+
+.profile-container {
+  @include flex-center;
+  justify-content: space-between;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: 2%;
+  &::after {
+    @include flare;
+    left: 15rem;
+  }
+  .profile-text {
+    margin-left: 5%;
+    p {
+      font-family: "Whisper";
+      color: $base-color;
+      font-size: 3rem;
+      font-weight: bold;
+      padding-left: 2px;
+    }
+    h1,
+    h2 {
+      font-family: "Roboto", sans-serif;
+    }
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 1.5rem;
+      line-height: 3.5rem;
+      padding-left: 4px;
+      font-weight: 400;
+    }
+  }
+  .profile-images {
+    @include flex-center;
+    gap: 5%;
+    &::after {
+      @include flare;
+    }
+    .icons {
+      display: flex;
+      flex-direction: column;
+      .tech-icon {
+        width: 70px;
+        padding-block: 10%;
+      }
+    }
+    .profile-img {
+      img {
+        height: 430px;
+        border-radius: 5%;
+      }
+    }
+  }
+  @media (max-width: $responsive_laptop) {
+    .profile-images {
+      .icons {
+        .tech-icon{
+            width: 60px;
+        }
+      }
+      .profile-img {
+        img {
+          height: 400px;
+        }
+      }
+    }
+  }
+}
