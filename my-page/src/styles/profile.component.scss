@@ -13,19 +13,18 @@
   .profile-text {
     margin-left: 5%;
     p {
-      font-family: "Whisper";
-      color: $base-color;
-      font-size: 3rem;
-      font-weight: bold;
-      padding-left: 2px;
+      font-family: "Caveat";
+      color: $secondary-color;
+      font-size: 3.1rem;
+      font-weight: 400;
     }
     h1,
     h2 {
-      font-family: "Roboto", sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
     h1 {
       font-size: 3.5rem;
-      font-weight: 500;
+      font-weight: 400;
     }
     h2 {
       font-size: 1.5rem;
@@ -36,13 +35,13 @@
   }
   .profile-images {
     @include flex-center;
-    gap: 5%;
     &::after {
       @include flare;
     }
     .icons {
       display: flex;
       flex-direction: column;
+      padding-right: 3%;
       .tech-icon {
         width: 70px;
         padding-block: 10%;
@@ -50,12 +49,28 @@
     }
     .profile-img {
       img {
+        width: fit-content;
         height: 430px;
         border-radius: 5%;
       }
     }
   }
-  @media (max-width: $responsive_laptop) {
+}
+@media (max-width: $responsive_laptop) {
+  .profile-container{
+    max-width: 80%;
+    &::after {
+      left: 0;
+    }
+    .profile-text{
+      margin-left: 3%;
+      h1{
+        font-size: 3rem;
+      }
+      h2{
+        font-size: 1.4rem;
+      }
+    }
     .profile-images {
       .icons {
         .tech-icon{
@@ -69,4 +84,50 @@
       }
     }
   }
+}
+@media (max-width: $responsive_tablet) {
+  .profile-container{
+    @include flex-column;
+    margin-top: 5%;
+    .profile-images{
+      @include flex-column;
+      .icons{
+        flex-direction: row;
+        padding: 0;
+        .tech-icon{
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: $responsive_min-width){
+ .profile-container{
+  .profile-text{
+    p{
+      font-size: 2.5rem;
+    }
+    h1{
+      font-size: 2.3rem;
+    }
+    h2{
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+    }
+  }
+  .profile-images{
+    .icons{
+      .tech-icon{
+        width: 45px;
+        margin: 0 3px;
+      }
+    }
+    .profile-img{
+      img{
+        height: auto;
+        width: 280px;
+      }
+    }
+  }
+ }
 }
