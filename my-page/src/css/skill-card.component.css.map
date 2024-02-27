@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"skill-card.component.css"}
+{"version":3,"sourceRoot":"","sources":["../styles/global.scss","../styles/skill-card.component.scss"],"names":[],"mappings":"AAcA;EACA;;;ACdA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;;AAGA;EACI;EACA;EACA,ODXC;;ACaL;EACI;EACA;;;AAIZ;EAGY;IACI;;EAEJ;IACI","file":"skill-card.component.css"}

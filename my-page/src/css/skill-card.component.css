@@ -1,1 +1,35 @@
-/*# sourceMappingURL=skill-card.component.css.map */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.skills-card {
+  border: 1px solid #7e61e7;
+  border-radius: 0.7rem;
+  padding: 2.5rem;
+  text-align: center;
+  background: rgba(22, 17, 47, 0.5);
+  backdrop-filter: blur(1rem);
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+.skills-card:hover, .skills-card .skills-card.active {
+  background: linear-gradient(#a993fe, #7e61e7);
+}
+.skills-card .skill-icon .fa-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #7e61e7;
+}
+.skills-card .skill-icon p {
+  font-size: 1.3rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 430px) {
+  .skills-card .skill-icon .fa-icon {
+    font-size: 2rem;
+  }
+  .skills-card .skill-icon p {
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=skill-card.component.css.map */

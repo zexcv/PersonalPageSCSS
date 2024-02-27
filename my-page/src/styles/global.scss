@@ -3,14 +3,18 @@ $responsive_mobile: 640px;
 $responsive_tablet: 1024px;
 $responsive_laptop: 1440px;
 //COLORS
-$gradient: 90deg, #a993fe 0%, #7e61e7 100%;
 $page-background: #060417;
 $base-color: #7e61e7;
+$base-color-light: #a993fe;
 $secondary-color: #cf649a;
 $black-translusent: rba(0, 0, 0, 0.2);
+$gradient: 90deg, $base-color-light 0%, $base-color 100%;
 //FONTS
 $nav-size: 1rem;
 
+*{
+font-family: "Roboto", sans-serif;
+}
 @mixin flex-center {
   display: flex;
   align-items: center;

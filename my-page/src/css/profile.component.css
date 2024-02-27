@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 .profile-container {
   display: flex;
   align-items: center;
@@ -22,9 +26,6 @@
   .profile-container::after {
     width: 15rem;
   }
-}
-.profile-container .profile-text {
-  margin-left: 5%;
 }
 .profile-container .profile-text p {
   font-family: "Caveat";
@@ -76,20 +77,13 @@
   padding-block: 10%;
 }
 .profile-container .profile-images .profile-img img {
-  width: fit-content;
   height: 430px;
   border-radius: 5%;
 }
 
 @media (max-width: 1440px) {
-  .profile-container {
-    max-width: 80%;
-  }
   .profile-container::after {
     left: 0;
-  }
-  .profile-container .profile-text {
-    margin-left: 3%;
   }
   .profile-container .profile-text h1 {
     font-size: 3rem;
