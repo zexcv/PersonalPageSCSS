@@ -4,7 +4,6 @@
 .skills-info-card{
     border: 1px solid $base-color;
     border-radius: 0.7rem;
-    // min-height: 384px;
     max-height: fit-content;
     background: rgba(22,17,47,0.4);
     backdrop-filter: blur(1rem);
@@ -49,7 +48,6 @@
 }
 @media (max-width: $responsive_tablet){
     .skills-info-card {
-        min-height: 0;
         margin-top: 7%;
         width: 400px;
     }

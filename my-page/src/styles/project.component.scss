@@ -1,0 +1,42 @@
+@import "../styles/global.scss";
+
+.all-projects-container {
+  margin: 4rem auto;
+  max-width: 60%;
+  .project-card {
+    @include flex-column;
+    max-width: 300px;
+    border: 1px solid $base-color;
+    border-radius: 15px;
+    &_poster {
+      width: 300px;
+      height: auto;
+      img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+      }
+    }
+    &_desc {
+        max-width: 92%;
+      h1 {
+        margin: 1rem 0;
+      }
+      text-align: center;
+    }
+    &_links {
+      margin: 1.2rem 0;
+      .icon {
+        background: linear-gradient(#b9a5ffeb, rgba(199, 198, 198, 0.624));
+        font-size: 2.3rem;
+        padding: 5px 20px;
+        margin: 0 30px;
+        border: 1px solid $base-color;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.834);
+        &:hover{
+            color: red;
+        }
+      }
+    }
+  }
+}

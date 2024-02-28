@@ -1,0 +1,9 @@
+@import "../styles/global.scss";
+
+.all-projects-container{
+    .projects{
+        @include flex-center;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+}

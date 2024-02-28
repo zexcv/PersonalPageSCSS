@@ -1,0 +1,11 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.all-projects-container .projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}/*# sourceMappingURL=all-projects.component.css.map */

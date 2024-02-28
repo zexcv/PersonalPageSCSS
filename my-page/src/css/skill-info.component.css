@@ -51,7 +51,6 @@
 
 @media (max-width: 1024px) {
   .skills-info-card {
-    min-height: 0;
     margin-top: 7%;
     width: 400px;
   }
