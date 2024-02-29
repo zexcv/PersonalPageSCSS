@@ -4,23 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Project = ({ title, description, url, git, poster, poster2 }) => {
-  const [imgSrc, setImgSrc] = useState(poster);
-
-  const altPoster = () => {
-    setTimeout(()=> {
-      setImgSrc(poster2)
-
-    },200)
-  }
-  const defPoster = () => {
-    setImgSrc(poster)
-  }
+const Project = ({ title, description, url, git, poster }) => {
 
   return (
     <div className="project-card">
       <div className="project-card_poster">
-        <img src={imgSrc} alt="" onMouseEnter={altPoster} onMouseLeave={defPoster} />
+        <img src={poster} alt=""/>
       </div>
       <div className="project-card_desc">
         <h1>{title}</h1>

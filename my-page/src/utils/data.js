@@ -21,7 +21,7 @@ export const SKILLS = [
     title: "Backend",
     icon: faServer,
     skills: [
-      { skill: "Nothin to be proud of yet", precentage: "0%" },
+      { skill: "Nothing to be proud of yet", precentage: "0%" },
     ],
   },
   {

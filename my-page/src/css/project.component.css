@@ -24,25 +24,6 @@
   border-radius: 15px 15px 0 0;
   transition: opacity 0.5s ease-in-out;
 }
-.all-projects-container .project-card_poster img:hover {
-  animation: hideImage 0.2s forwards, showImage 0.2s forwards 0.2s;
-}
-@keyframes hideImage {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes showImage {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .all-projects-container .project-card_desc {
   max-width: 92%;
   text-align: center;
