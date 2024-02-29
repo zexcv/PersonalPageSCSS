@@ -1,9 +1,12 @@
 @import "../styles/global.scss";
 
 .all-projects-container{
+    h4{
+        font-size: 1.5rem;
+    }
     .projects{
         @include flex-center;
         justify-content: space-between;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 }
