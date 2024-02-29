@@ -1,7 +1,10 @@
 import { faCode, faServer, faScrewdriverWrench, faHandshake } from '@fortawesome/free-solid-svg-icons'
 import woof_poster from '../assets/images/woof_1.png'
+import woof_poster2 from '../assets/images/woof_2.png'
 import movie_poster from '../assets/images/movie_1.png'
+import movie_poster2 from '../assets/images/movie_2.png'
 import van_poster from '../assets/images/van_1.png'
+import van_poster2 from '../assets/images/van_2.png'
 
 export const SKILLS = [
   {
@@ -51,20 +54,23 @@ export const PROJECTS = [
     description: "Application for searching and displaying information about your favourite breed of dog",
     url: "https://woof-api.netlify.app/",
     poster: woof_poster,
+    poster2: woof_poster2,
     git: "https://github.com/zexcv/WOOF",
   },
   {
     title: "Movie Watchlist",
-    description: "Application for finding movies you want to watch and adding them to your watchlist.",
+    description: "Application for finding movies you want to watch and adding them to your watchlist",
     url: "https://my-movie-watchlist-api.netlify.app/",
     poster: movie_poster,
+    poster2: movie_poster2,
     git: "https://github.com/zexcv/MovieWatchList",
   },
   {
     title: "Vanlife",
-    description: "The van rental application. This project was a part of the Frontend Developer Path course on scrimba.",
+    description: "The van rental application. Part of the Frontend Developer Path course on Scrimba.com",
     url: "https://van-rent-project.netlify.app/",
     poster: van_poster,
+    poster2: van_poster2,
     git: "https://github.com/zexcv/VAN",
   },
 ];

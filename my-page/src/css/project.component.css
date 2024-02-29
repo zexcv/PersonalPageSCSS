@@ -22,6 +22,26 @@
 .all-projects-container .project-card_poster img {
   width: 100%;
   border-radius: 15px 15px 0 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.all-projects-container .project-card_poster img:hover {
+  animation: hideImage 0.2s forwards, showImage 0.2s forwards 0.2s;
+}
+@keyframes hideImage {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .all-projects-container .project-card_desc {
   max-width: 92%;
@@ -33,15 +53,42 @@
 .all-projects-container .project-card_links {
   margin: 1.2rem 0;
 }
-.all-projects-container .project-card_links .icon {
-  background: linear-gradient(rgba(185, 165, 255, 0.9215686275), rgba(199, 198, 198, 0.624));
-  font-size: 2.3rem;
-  padding: 5px 20px;
-  margin: 0 30px;
-  border: 1px solid #7e61e7;
-  border-radius: 5px;
-  color: rgba(0, 0, 0, 0.834);
+.all-projects-container .project-card_links a {
+  margin: 0 20px;
 }
-.all-projects-container .project-card_links .icon:hover {
-  color: red;
+.all-projects-container .project-card_links .bn30 {
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  padding: 0.7em 2em;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  color: rgba(255, 255, 255, 0.91);
+}
+.all-projects-container .project-card_links .bn30::after {
+  content: "";
+  border-radius: 22px;
+  position: absolute;
+  margin: 5px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #0e0e10;
+}
+.all-projects-container .project-card_links .bn30:hover {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+}
+.all-projects-container .project-card_links .bn30:hover .icon {
+  color: #a993fe;
+}
+.all-projects-container .project-card_links .icon {
+  font-size: 2rem;
 }/*# sourceMappingURL=project.component.css.map */

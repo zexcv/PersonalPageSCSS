@@ -16,6 +16,7 @@ const AllProjects = () => {
                 description={project.description}
                 url={project.url}
                 poster={project.poster}
+                poster2={project.poster2}
                 git={project.git}
             />
            ))}
