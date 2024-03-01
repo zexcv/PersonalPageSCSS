@@ -1,12 +1,48 @@
 @import "../styles/global.scss";
 
-.all-projects-container{
-    h4{
-        font-size: 1.5rem;
+.all-projects-container {
+    
+  h4 {
+    font-size: 1.5rem;
+  }
+  .projects {
+    @include flex-center;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+}
+@include bn30;
+
+@media (max-width: $responsive_tablet){
+    .all-projects-container{
+        h4{
+            text-align: center;
+        }
+        .projects{
+            justify-content: center;
+            .project-navigation{
+                position: absolute;
+                @include flex-center;
+                gap:350px;
+            }
+        }
     }
-    .projects{
-        @include flex-center;
-        justify-content: space-between;
-        margin-top: 2rem;
+}
+@media (max-width: $responsive_min-width){
+    .all-projects-container{
+       .projects{
+        .project-navigation{
+            gap:240px
+        }
+       } 
+    }
+}
+@media (max-width: 375px){
+    .all-projects-container{
+       .projects{
+        .project-navigation{
+            gap:180px
+        }
+       } 
     }
 }

@@ -14,57 +14,41 @@
       img {
         width: 100%;
         border-radius: 15px 15px 0 0;
-        transition: opacity 0.5s ease-in-out;
       }
     }
     &_desc {
-        max-width: 92%;
-        text-align: center;
+      max-width: 92%;
+      text-align: center;
       h1 {
         margin: 1rem 0;
       }
     }
     &_links {
       margin: 1.2rem 0;
-      a{
+      a {
         margin: 0 20px;
       }
-      .bn30 {
-        border: 5em;
-        cursor: pointer;
-        outline: none;
-        -webkit-transform: translate(0);
-        transform: translate(0);
-        background-image: linear-gradient(45deg, #4568dc, #b06ab3);
-        padding: 0.7em 2em;
-        border-radius: 65px;
-        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-        -webkit-transition: box-shadow 0.25s;
-        transition: box-shadow 0.25s;
-        color: rgba(255, 255, 255, 0.91);
-        &::after{
-          content: "";
-          border-radius: 22px;
-          position: absolute;
-          margin: 5px;
-          top: 0;
-          left: 0;
-          bottom: 0;
-          right: 0;
-          z-index: -1;
-          background: #0e0e10;
-        }
-        &:hover{
-          background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-          box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-          .icon{
-            color: $base-color-light;
-          }
-        }
-      }
+      @include bn30;
       .icon {
         font-size: 2rem;
       }
+    }
+  }
+}
+@media (max-width: $responsive_laptop) {
+  .project-card {
+    width: 260px;
+    &_poster {
+      max-width: 260px;
+    }
+  }
+}
+
+@media (max-width: $responsive_tablet) {
+  .project-card {
+    width: 300px;
+    &_poster {
+      max-width: 300px;
     }
   }
 }

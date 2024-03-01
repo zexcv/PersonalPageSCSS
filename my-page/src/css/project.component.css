@@ -22,7 +22,6 @@
 .all-projects-container .project-card_poster img {
   width: 100%;
   border-radius: 15px 15px 0 0;
-  transition: opacity 0.5s ease-in-out;
 }
 .all-projects-container .project-card_desc {
   max-width: 92%;
@@ -72,4 +71,21 @@
 }
 .all-projects-container .project-card_links .icon {
   font-size: 2rem;
+}
+
+@media (max-width: 1440px) {
+  .project-card {
+    width: 260px;
+  }
+  .project-card_poster {
+    max-width: 260px;
+  }
+}
+@media (max-width: 1024px) {
+  .project-card {
+    width: 300px;
+  }
+  .project-card_poster {
+    max-width: 300px;
+  }
 }/*# sourceMappingURL=project.component.css.map */
