@@ -1,13 +1,12 @@
 @import "../styles/global.scss";
 
-.all-projects-container {
-  margin: 4rem auto;
-  max-width: 60%;
+
   .project-card {
     @include flex-column;
     max-width: 300px;
     border: 1px solid $base-color;
     border-radius: 15px;
+    margin: 0 auto;
     &_poster {
       width: 300px;
       height: auto;
@@ -34,7 +33,6 @@
       }
     }
   }
-}
 @media (max-width: $responsive_laptop) {
   .project-card {
     width: 260px;
@@ -50,5 +48,10 @@
     &_poster {
       max-width: 300px;
     }
+  }
+}
+@media (max-width: $responsive_min-width){
+  .project-card{
+    width: 300px;
   }
 }

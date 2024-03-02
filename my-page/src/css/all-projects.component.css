@@ -2,73 +2,30 @@
   font-family: "Roboto", sans-serif;
 }
 
+.all-projects-container {
+  max-width: 60%;
+  margin: 0 auto;
+}
 .all-projects-container h4 {
   font-size: 1.5rem;
+  margin-bottom: 4rem;
 }
-.all-projects-container .projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
-.bn30 {
-  border: 5em;
-  cursor: pointer;
-  outline: none;
-  -webkit-transform: translate(0);
-  transform: translate(0);
-  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
-  padding: 0.7em 2em;
-  border-radius: 65px;
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
-  -webkit-transition: box-shadow 0.25s;
-  transition: box-shadow 0.25s;
-  color: rgba(255, 255, 255, 0.91);
-}
-.bn30::after {
-  content: "";
-  border-radius: 22px;
-  position: absolute;
-  margin: 5px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background: #0e0e10;
-}
-.bn30:hover {
-  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
-  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
-}
-.bn30:hover .icon {
-  color: #a993fe;
+.all-projects-container h3 {
+  display: none;
 }
 
 @media (max-width: 1024px) {
-  .all-projects-container h4 {
+  .all-projects-container {
     text-align: center;
   }
-  .all-projects-container .projects {
-    justify-content: center;
-  }
-  .all-projects-container .projects .project-navigation {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 350px;
+  .all-projects-container h3 {
+    font-family: "Courier New", Courier, monospace;
+    display: block;
+    margin-bottom: 20px;
   }
 }
-@media (max-width: 430px) {
-  .all-projects-container .projects .project-navigation {
-    gap: 240px;
-  }
-}
-@media (max-width: 375px) {
-  .all-projects-container .projects .project-navigation {
-    gap: 180px;
+@media (max-width: 500px) {
+  .all-projects-container {
+    max-width: 100%;
   }
 }/*# sourceMappingURL=all-projects.component.css.map */
