@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-scroll';
 import '../css/navbar.component.css'
 import '../css/global.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,36 +7,37 @@ import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { MobileNav } from "./MobileNav";
 
 export default function Navbar() {
+
   const [openMenu, setOpenMenu] = React.useState(false);
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
   };
   return (
     <>
-      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu}/>
+      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
       <nav className="nav-wrapper">
         <div className="nav-content">
           <div className="initials">KK</div>
           <ul>
             <li>
-              <a href="" className="menu-item">
+              <Link to="home" spy={true} smooth={true} offset={-120} duration={500} className="menu-item">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="menu-item">
+              <Link to="skills" spy={true} smooth={true} offset={-110} duration={500} className="menu-item">
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="menu-item">
+              <Link to="projects" spy={true} smooth={true} offset={50} duration={500} className="menu-item">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="menu-item">
+              <Link to="contact" spy={true} smooth={true} offset={50} duration={500} className="menu-item">
                 Contact Me
-              </a>
+              </Link>
             </li>
             <button className="resume-btn">My Resume</button>
           </ul>

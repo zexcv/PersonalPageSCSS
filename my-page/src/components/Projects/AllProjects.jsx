@@ -28,7 +28,7 @@ const AllProjects = () => {
   };
 
   return (
-    <section className="all-projects-container">
+    <section name="projects" id="projects "className="all-projects-container">
       <h4>Personal Projects</h4>
       <h3>Swipe to see more</h3>
         <Slider ref={sliderRef} {...settings}>

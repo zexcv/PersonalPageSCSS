@@ -9,7 +9,7 @@ import "../css/profile.component.css";
 
 const Profile = () => {
   return (
-    <section className="profile-container">
+    <section name="home" className="profile-container">
       <div className="profile-text">
         <p>Hi, my name is</p>
         <h1>Kasper Kufel</h1>

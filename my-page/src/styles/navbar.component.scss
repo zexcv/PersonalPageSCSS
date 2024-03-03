@@ -1,5 +1,6 @@
 @import "../styles/global.scss";
 
+
 .nav-wrapper {
   background-color: $black-translusent;
   width: 100%;
@@ -26,6 +27,7 @@
         font-size: $nav-size;
         color: white;
         position: relative;
+        cursor: pointer;
         &::before {
           content: " ";
           width: 2rem;

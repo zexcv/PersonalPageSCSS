@@ -3,9 +3,9 @@ import '../css/contact-me.component.css'
 
 const ContactMe = () => {
   return (
-    <div className='contact-container'>
+    <section name="contact" className='contact-container'>
 
-    </div>
+    </section>
   )
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "../css/mobile-nav.component.css";
 export const MobileNav = ({ isOpen, toggleMenu }) => {
   return (
@@ -11,24 +12,56 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
           <div className="initials">KK</div>
           <ul>
             <li>
-              <a href="" className="menu-item">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-120}
+                duration={500}
+                className="menu-item"
+                onClick={toggleMenu}
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="menu-item">
+              <Link
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-110}
+                duration={500}
+                className="menu-item"
+                onClick={toggleMenu}
+              >
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="menu-item">
+              <Link
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="menu-item"
+                onClick={toggleMenu}
+              >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="menu-item">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                className="menu-item"
+                onClick={toggleMenu}
+              >
                 Contact Me
-              </a>
+              </Link>
             </li>
             <button className="resume-btn">My Resume</button>
           </ul>
