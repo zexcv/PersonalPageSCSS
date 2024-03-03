@@ -42,7 +42,7 @@ export const MobileNav = ({ isOpen, toggleMenu }) => {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-120}
                 duration={500}
                 className="menu-item"
                 onClick={toggleMenu}

@@ -30,7 +30,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="projects" spy={true} smooth={true} offset={50} duration={500} className="menu-item">
+              <Link to="projects" spy={true} smooth={true} offset={-120} duration={500} className="menu-item">
                 Projects
               </Link>
             </li>
